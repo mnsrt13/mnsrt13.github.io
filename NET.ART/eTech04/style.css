@@ -1,6 +1,6 @@
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout */
 
-body {
+#body {
     margin: 0;
     background-color: rgb(216, 213, 213);
     font-family: 'Copperplate';

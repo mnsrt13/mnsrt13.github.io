@@ -8,38 +8,44 @@
     <link rel="stylesheet" href="/eTech05/style.css">
 </head>
 <style>
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout */
+
     body {
         margin: 0;
         background-color: rgb(216, 213, 213);
+        font-family: 'Copperplate';
+        font-size: large;
+        font-size:80px;
+        font-weight: normal;
+        text-align: center;
     }
-    
+
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
         grid-auto-rows: minmax(100px, auto);
     }
-    
+
     #cir {  
         background-color: #b81fac;
         width: 30px;
         height: 30px;
         border-radius: 30px;
-      }
-    
+    }
+
     #back {
         position: fixed;
         bottom: 0;
         left: 0;
     }
-    
+
     #next {
         position: fixed;
         bottom: 0;
         right: 0;
     }
-    
+
     .four, .five, .six{
         display: flex;
         justify-content: center;
@@ -80,7 +86,7 @@
     <a id="back" href="http://127.0.0.1:5500/eTech04/index.html#">                
         <div id="cir"></div>
     </a> 
-    <a id="next" href="#">                
+    <a id="next" href="http://127.0.0.1:5500/WE=LINK/index.html">                
         <div id="cir"></div>
     </a> 
 </body>
