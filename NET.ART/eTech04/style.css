@@ -5,7 +5,7 @@ body {
     background-color: rgb(216, 213, 213);
     font-family: 'Copperplate';
     font-size: large;
-    font-size:150px;
+    font-size:80px;
     font-weight: normal;
     text-align: center;
 }
@@ -34,4 +34,10 @@ body {
     position: fixed;
     bottom: 0;
     right: 0;
+}
+
+.five{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
