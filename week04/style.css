@@ -1,0 +1,33 @@
+body {
+    background-color: pink;
+    color: brown;
+    position: center;
+  }
+  
+  h1 {
+    margin: 20px 20px 20px;
+    border: 1rem double white;
+    position: center;
+    padding: 0.5 em;
+    text-align: center;
+    text-size-adjust: 10;
+    font-size: 55px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  li {
+    padding: 10;
+  }
+  
+  a {
+      text-decoration: none;
+      color: brown;
+  }
+  
