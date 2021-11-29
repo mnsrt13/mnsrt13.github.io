@@ -1,6 +1,9 @@
 const cells = document.querySelectorAll('#board .cell');
 const msg = document.getElementById("msg");
-const restart = document.getElementById("restart")
+const restart = document.getElementById("restart");
+const hint = document.getElementById("hint");
+const show = document.getElementById("show");
+
 
 const combinations = [
     [2, 4, 11, 13],
@@ -12,7 +15,7 @@ const failure = "Failure";
 let won = false;
 let turns = 0;
 
-
+hint.addEventListener('click', showHint)
 restart.addEventListener('click', start);
 start();
 
@@ -26,11 +29,15 @@ function start(){
     turns = 0;
 }
 
+function showHint(){
+    document.getElementsById("showHint").innerHTML = "hint: one queen per column in the N leftmost columns";
+    show.classList.add('display');
+}
+
 function fillCell(elem){
     turns += 1;
-
     const cell = elem.target
-    cell.classList.add('queen');
+    cell.classList.add("queen");
     checkWin()
     if (checkWin()){
         document.getElementById("text").innerHTML = "Success!";
@@ -40,7 +47,6 @@ function fillCell(elem){
             if (!c.classList.contains('queen'))
             c.classList.add('stop');
         })
-
         won == true;
     } else if (!won && turns > 3){
         document.getElementById("text").innerHTML = "Failure!";

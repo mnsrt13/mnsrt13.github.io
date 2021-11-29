@@ -80,8 +80,30 @@ section{
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
+
+    position:fixed;
+    top: 0;
+    left: 0;
   }
   
 #home:hover{
+    cursor:pointer;
+}
+
+#hint{
+    background-color: brown;
+    color: ivory;
+    padding: 8px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+
+    position:fixed;
+    top: 0;
+    right: 0;
+  }
+  
+#hint:hover{
     cursor:pointer;
 }
