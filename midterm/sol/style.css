@@ -1,109 +1,87 @@
 body {
-    background-color: bisque;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: brown;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: brown;
 }
 
 header {
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header h1 {
-    font-size: 42px;
-    cursor: default;
+  font-size: 42px;
+  cursor: default;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    flex-direction:column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
 }
 
-sols{
-    display: flex;
-    flex-direction:row;
+sols {
+  display: flex;
+  flex-direction: row;
 }
 
-section{
-    padding: 10px;
+section {
+  padding: 10px;
 }
 
 .board {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    padding-bottom: 30px;
-    padding-top: 1px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  padding-bottom: 30px;
+  padding-top: 1px;
 }
 
-.cell{
-    position:relative;
-    border: 3px solid;
-    width: 50px;
-    padding-top: 100%;
-    cursor: default;
+.cell {
+  position: relative;
+  border: 3px solid;
+  width: 50px;
+  padding-top: 100%;
+  cursor: default;
 }
 
-.cell.queen::before{
-    content:'';
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    border: 10px solid;
-    border-radius: 50%;
-    color: ivory;
-    background-color: ivory;
+.cell.queen::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 10px solid;
+  border-radius: 50%;
+  color: ivory;
+  background-color: ivory;
 }
 
-.cell.queen:hover::before{
-    border-radius: 50%;
-    color: brown;
-    background-color: brown;
+.cell.queen:hover::before {
+  border-radius: 50%;
+  color: brown;
+  background-color: brown;
 }
 
-#home{
-    background-color: brown;
-    color: ivory;
-    padding: 8px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-
-    position:fixed;
-    top: 0;
-    left: 0;
-  }
-  
-#home:hover{
-    cursor:pointer;
+#home {
+  background-color: brown;
+  color: ivory;
+  padding: 8px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-#hint{
-    background-color: brown;
-    color: ivory;
-    padding: 8px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-
-    position:fixed;
-    top: 0;
-    right: 0;
-  }
-  
-#hint:hover{
-    cursor:pointer;
+#home:hover {
+  cursor: pointer;
 }
