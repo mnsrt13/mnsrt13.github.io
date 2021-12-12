@@ -15,9 +15,16 @@ header {
     justify-content: center;
 }
 
-header h1 {
+header h1{
     color: rgb(165, 86, 99);
     font-size: 42px;
+    font-family: 'Tienne', serif;
+    cursor: default;
+}
+
+h2{
+    color: rgb(165, 86, 99);
+    font-size: 30px;
     font-family: 'Tienne', serif;
     cursor: default;
 }

@@ -10,11 +10,9 @@ let plays = 0;
 var first = null
 var second = null;
 let cont = true; // continue
-let check = false;
 
 let flipped = [];
 let cards = Array.from(document.getElementsByClassName('cell'))
-
 
 start();
 
